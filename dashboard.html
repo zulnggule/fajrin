@@ -105,14 +105,19 @@
         font-size: 1em;
       }
 
+      /* Mengatur menu navigasi agar vertikal pada layar kecil */
       .w3-bar .w3-bar-item {
         padding: 10px 5px;
         font-size: 0.9em;
+        display: block;
+        text-align: left;
       }
 
-      .footer-links {
+      .w3-top .w3-bar {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 0 10px;
       }
     }
   </style>
@@ -125,13 +130,13 @@
         <i class="fa fa-home w3-margin-right"></i>HOME
       </a>
       <a href="Lokasi.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Lokasi">
-        <i class="fa fa-globe"></i>
+        <i class="fa fa-globe"></i> Lokasi
       </a>
-      <a href="Profil.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Profile">
-        <i class="fa fa-user"></i>
+      <a href="Profil.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Profil">
+        <i class="fa fa-user"></i> Profil
       </a>
-      <a href="Pesan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages">
-        <i class="fa fa-envelope"></i>
+      <a href="Pesan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Pesan">
+        <i class="fa fa-envelope"></i> Pesan
       </a>
       <a href="logout.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Logout">
         <i class="fa fa-sign-out"></i> Logout
@@ -142,9 +147,7 @@
   <main>
     <div class="container">
       <h1>Selamat Datang di Beranda Kami</h1>
-      <p>
-        Ini adalah halaman beranda setelah login. Silakan jelajahi menu di atas untuk informasi lebih lanjut.
-      </p>
+      <p>Ini adalah halaman beranda setelah login. Silakan jelajahi menu di atas untuk informasi lebih lanjut.</p>
       <img src="https://via.placeholder.com/800x400" alt="Foto Beranda" class="main-image" />
     </div>
   </main>
